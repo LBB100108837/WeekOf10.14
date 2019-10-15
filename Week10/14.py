@@ -1,10 +1,7 @@
 import math
 
 # starting off
-print(12/6)
-print(355/113)
 
-print(24 / (6 * math.sqrt(2)))
 
 def archimedes(numSides):
     innerAngleB = 360.0 / numSides
@@ -16,18 +13,27 @@ def archimedes(numSides):
     return pi
 
 
-print(archimedes(8))
-print(archimedes(32))
+print(archimedes(100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000))
 
 
+# This is pi 3.14159265359
 
 
-for sides in range(8, 100, 8):
-    print(sides, archimedes(sides))
 
 # Experiment with the loop above alongside the actual value of Pi. How many
 # sides does it take to make the two close
-
+# IT TAKES MORE SIDES
 
 # Modify the archimedes function to take the radius of the circle as a parameter
 # Can you get a better answer more quickly using a larger circle?
+
+
+def archimedes(numSides):
+    innerAngleB = 1440.0 / numSides
+    halfAngleA = innerAngleB / 8
+    oneHalfSideS = math.sin(math.radians(halfAngleA))
+    sideS = oneHalfSideS * 8
+    polygonCircumference = numSides * sideS
+    pi = polygonCircumference / 8
+    return pi
+print(archimedes(100000000000))

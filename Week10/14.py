@@ -44,13 +44,18 @@ print(archimedes(1000000000))
 # Accumulators
 
 acc = 0
-for x in range(1, 6):
-    acc = acc + x
+for x in range(1, 101):
+    acc = acc + x * 2
 
 print(acc)
 
 
 # compute the sum of the first 100 even numbers
+acc = 0
+for x in range(0, 101, 2):
+    acc = acc + x
+
+print(acc)
 # compute the sum of the first 50 odd numbers
 # compute the average of the first 100 odd numbers
 # write a function that returns the average of the first N numbers where
@@ -62,5 +67,5 @@ print(acc)
 #   Fibonacci number
 # Write a function to compute the Nth Fibonacci number, where N is a Parameter.
 #   You may assume that N will be greater than or equal to 3.
-#
+
 

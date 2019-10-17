@@ -59,13 +59,19 @@ for x in range(1, 50):
     acc = acc + x * 2
 print(acc)
 # compute the average of the first 100 odd numbers
-acc = 1
-for x in range(1, 100):
-    acc = acc + x * 2 / 100
-print(acc)
+acc = 0
+for x in range(1, 200):
+    if x % 2 :
+        acc = (acc + x)
+
+print(acc/100)
+
 # write a function that returns the average of the first N numbers where
 #   N is a parameter
-I AM STUMPED PLEASE HELP
+acc = 0
+for x in range(1, 101):
+    acc = acc + x
+print(acc/101)
 # write a function called factorial that computes the product of the first N
 #   numbers, where N is a parameter
 # each number in the Fibonacci sequence is the sum of the previous two numbers

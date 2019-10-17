@@ -42,24 +42,36 @@ print(archimedes(1000000000))
 
 
 # Accumulators
-
 acc = 0
-for x in range(1, 101):
-    acc = acc + x * 2
-
+for x in range(0, 6):
+    acc = acc + x
 print(acc)
 
 
 # compute the sum of the first 100 even numbers
 acc = 0
-for x in range(0, 101, 2):
-    acc = acc + x
-
+for x in range(1, 101):
+    acc = acc + x * 2
 print(acc)
 # compute the sum of the first 50 odd numbers
+acc = 50
+for x in range(1, 50):
+    acc = acc + x * 2
+print(acc)
 # compute the average of the first 100 odd numbers
+acc = 1
+for x in range(1, 100):
+    acc = acc + x * 2 / 100
+print(acc)
 # write a function that returns the average of the first N numbers where
 #   N is a parameter
+acc =
+for x in range(1, ):
+    acc = acc +
+print(acc)
+
+
+I AM STUMPED
 # write a function called factorial that computes the product of the first N
 #   numbers, where N is a parameter
 # each number in the Fibonacci sequence is the sum of the previous two numbers

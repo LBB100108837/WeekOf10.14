@@ -71,7 +71,7 @@ for x in range(1, ):
 print(acc)
 
 
-I AM STUMPED
+I AM STUMPED PLEASE HELP
 # write a function called factorial that computes the product of the first N
 #   numbers, where N is a parameter
 # each number in the Fibonacci sequence is the sum of the previous two numbers

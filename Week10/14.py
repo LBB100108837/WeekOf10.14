@@ -65,12 +65,6 @@ for x in range(1, 100):
 print(acc)
 # write a function that returns the average of the first N numbers where
 #   N is a parameter
-acc =
-for x in range(1, ):
-    acc = acc +
-print(acc)
-
-
 I AM STUMPED PLEASE HELP
 # write a function called factorial that computes the product of the first N
 #   numbers, where N is a parameter

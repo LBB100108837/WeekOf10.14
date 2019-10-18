@@ -61,17 +61,13 @@ print(acc)
 # compute the average of the first 100 odd numbers
 acc = 0
 for x in range(1, 200):
-    if x % 2 :
+    if x % 2:
         acc = (acc + x)
 
 print(acc/100)
 
 # write a function that returns the average of the first N numbers where
 #   N is a parameter
-acc = 0
-for x in range(1, 101):
-    acc = acc + x
-print(acc/101)
 # write a function called factorial that computes the product of the first N
 #   numbers, where N is a parameter
 # each number in the Fibonacci sequence is the sum of the previous two numbers
@@ -81,3 +77,56 @@ print(acc/101)
 #   You may assume that N will be greater than or equal to 3.
 
 
+# A Monte Carlo Simulation
+
+import random
+
+print(random.random())
+
+# Boolean expressions
+# > Greater than\
+# >= greater than or equal to
+# < Less than or equal to
+# <= Less than or equal to
+# == The same as ( equal to )
+# != Not equal to
+# = is assigning it and == is comparing it
+CatWeight = 25
+print(CatWeight == 25)
+dogWeight = 15
+
+# compound Boolean operators
+# and
+# or
+# not
+
+print(CatWeight > 30 and dogWeight < 20)
+
+print(CatWeight > 30 or dogWeight < 20)
+
+print(not dogWeight < 20)
+# "not" takes the original answer and "flips" it.
+
+# Decision Making -- Selection statements
+a = 5
+b = 10
+c = 75
+
+if a > b:
+    c = 45
+
+print(c)
+
+if a > b:
+    c = 45
+    if b > c:
+        a = 25
+    else:
+        a = -25
+else:
+    c = 1050
+    if b == a:
+        c = 25
+
+
+print(a, b, c)

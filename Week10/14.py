@@ -77,7 +77,10 @@ print(acc/100)
 #   You may assume that N will be greater than or equal to 3.
 
 
-# A Monte Carlo Simulation
+
+
+
+## A Monte Carlo Simulation
 
 import random
 
@@ -132,7 +135,7 @@ else:
 print(a, b, c)
 
 
-d = 56
+d = 85
 e = 72
 f = 44
 ans = 0
@@ -147,4 +150,5 @@ else:
             ans = 100
         else:
             ans = 75
-print (ans)
+print(ans)
+print

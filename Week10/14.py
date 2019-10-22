@@ -195,8 +195,12 @@ def showMontePi(numDarts):
     inCircle = 0
     who.penup()
     for i in range(numDarts):
-        x = random.random()
-        y = random.random()
+        if inCircle >= 1:
+            x = random.random()
+            y = random.random()
+        else:
+            x = random.random() * -1
+            y = random.random() * -1
 
         distance = math.sqrt(x**2 + y**2)
 
@@ -215,6 +219,8 @@ def showMontePi(numDarts):
     return pi
 
 print(montePi(100000))
-print(showMontePi(1000000))
+print(showMontePi(10))
 
-
+# Task:
+# Modify the simulation to plot points in the entire circle. you will have to
+#   adjust the calculated value of pi accordingly.
